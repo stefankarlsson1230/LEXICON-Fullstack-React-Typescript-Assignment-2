@@ -54,24 +54,13 @@ const library: Book[] = [
 
 // TODO: Create a function that finds all available books
 function getAvailableBooks(books: Book[]): Book[] {
-    const availableBooks: Book[] = [];
-
-    for(let book of books) {
-        if (book.isAvailable) availableBooks.push(book);
-    }
-
-    return availableBooks;
+    return books.filter(book => book.isAvailable);
 }
 
 
 // TODO: Create a function that finds a book by title
 function findBookByTitle(books: Book[], title: string): Book | undefined {
-
-    for(let book of books) {
-        if (book.title === title) return book;
-    }
-
-    return undefined;
+    return books.find(book => book.title === title);
 }
 
 
