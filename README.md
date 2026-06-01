@@ -29,7 +29,7 @@ Run `npx tsx <filename.ts>` in your terminal or define a script section in your 
 ```
 and then run `npm run start`
 
-#### Exercise 1: Basic Types
+### Exercise 1: Basic Types
 **Objective:** Learn to work with basic TypeScript types.
 
 Create a file ´01-basic-types.ts´ and complete the following:
@@ -58,7 +58,7 @@ console.log(greet("Bob", 30));
 console.log(calculateArea(5, 10));
 ```
 
-#### Exercise 2: Working with Objects
+### Exercise 2: Working with Objects
 **Objective:** Understand object types and interfaces.
 
 Create a file `02-objects.ts`:
@@ -96,7 +96,7 @@ function findBookByTitle(books: Book[], title: string): Book | undefined {
 console.log(getAvailableBooks(library));
 ```
 
-#### Exercise 3: Union Types and Type Guards
+### Exercise 3: Union Types and Type Guards
 **Objective:** Learn to work with union types and type checking.
 
 Create a file `03-union-types.ts`:
@@ -140,7 +140,7 @@ console.log(isAdmin(user1));
 console.log(getRoleGreeting(user2));
 ```
 
-#### Exercise 4: Arrays and Tuples
+### Exercise 4: Arrays and Tuples
 **Objective:** Master array types and tuples.
 
 Create a file `04-arrays-tuples.ts`:
@@ -179,7 +179,7 @@ console.log(calculateDistance([0, 0], [3, 4]));
 console.log(rgbToHex([255, 128, 0]));
 ```
 
-#### Exercise 5: Enums
+### Exercise 5: Enums
 **Objective:** Learn to use enums for better code organization.
 
 Create a file ´05-enums.ts´ and complete the following:
@@ -225,7 +225,7 @@ console.log(getStatusMessage(order.status));
 console.log(canCancelOrder(order));
 ```
 
-#### Exercise 6: Functions and Optional Parameters
+### Exercise 6: Functions and Optional Parameters
 **Objective:** Master function types and optional parameters.
 
 Create a file ´06-functions.ts´ and complete the following:
@@ -264,7 +264,7 @@ console.log(calculateAverage(10, 20, 30, 40));
 console.log(processNumbers([1, 2, 3, 4], (n) /> n * 2));
 ```
 
-#### Exercise 7: Generics Basics
+### Exercise 7: Generics Basics
 **Objective:** Master function types and optional parameters.
 
 Create a file ´07-generics.ts´ and complete the following:
@@ -287,7 +287,7 @@ console.log(getFirstElement([1, 2, 3]));
 console.log(getFirstElement(["a", "b", "c"]));
 ```
 
-#### Exercise 8: Utility Types and Type Manipulation
+### Exercise 8: Utility Types and Type Manipulation
 **Objective:** Learn built-in utility types.
 
 Create a file ´08-utility-types.ts´ and complete the following:
