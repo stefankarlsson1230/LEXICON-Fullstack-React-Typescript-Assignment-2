@@ -1,0 +1,26 @@
+{
+  "name": "lexicon-fullstack-react-typescript-assignment-2",
+  "version": "1.0.0",
+  "description": "Before starting, create a new project/folder and initialize it with: `npm init -y`.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stefankarlsson1230/LEXICON-Fullstack-React-Typescript-Assignment-2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/stefankarlsson1230/LEXICON-Fullstack-React-Typescript-Assignment-2/issues"
+  },
+  "homepage": "https://github.com/stefankarlsson1230/LEXICON-Fullstack-React-Typescript-Assignment-2#readme",
+  "dependencies": {
+    "@types/node": "^25.9.1",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3"
+  }
+}
