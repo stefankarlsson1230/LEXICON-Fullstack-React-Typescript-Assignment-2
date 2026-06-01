@@ -32,26 +32,15 @@ function createProfile(firstName: string, lastName: string, age: number = 18, ci
 
 // TODO: Create a function with rest parameters that calculates average
 function calculateAverage(...numbers: number[]): number {
-    let sum: number = 0;
-    
-    for(let num of numbers) {
-        sum += num;
-    }
-
-    return sum / numbers.length;
+    if (numbers.length === 0) return 0;
+    return (numbers.reduce((prev, cur) => prev + cur, 0)) / numbers.length;
 }
 
 
 // TODO: Create a function that takes a callback
 // Apply callback to each number
 function processNumbers(numbers: number[], callback: (num: number) => number): number[] {
-    const result: number[] = [];
-
-    for(let n of numbers) {
-        result.push(callback(n));
-    }
-
-    return result;
+    return numbers.map(callback);
 }
 
 
