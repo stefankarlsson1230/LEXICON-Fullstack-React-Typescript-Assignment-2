@@ -30,8 +30,7 @@ interface User {
 
 // TODO: Create a function that checks if a user has admin privileges
 function isAdmin(user: User): boolean {
-    if(user.role === "admin") return true;
-    else return false;
+    return user.role === "admin";
 }
 
 
@@ -39,7 +38,7 @@ function isAdmin(user: User): boolean {
 function getRoleGreeting(user: User): string {
 
     switch (user.role) {
-        case "admin": return 'Admin - Greeetings great admin!';
+        case "admin": return 'Admin - Greetings great admin!';
         case "user": return 'User - Please log-off when you are done!';
         case "guest": return 'Guest - No coffee on the keyboard please!';
         default: return 'This should not be possible;'
