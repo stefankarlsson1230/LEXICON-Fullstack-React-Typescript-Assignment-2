@@ -18,6 +18,7 @@ function getStatusMessage(status: OrderStatus): string {
         case OrderStatus.Shipped: return 'Your order is shipped';
         case OrderStatus.Delivered: return 'Your order is delivered';
         case OrderStatus.Cancelled: return 'Your order is cancelled';
+        default: return 'Impossible!';
     }
 }
 
@@ -25,8 +26,7 @@ function getStatusMessage(status: OrderStatus): string {
 // TODO: Create a function that checks if an order can be cancelled
 // (only Pending and Processing orders can be cancelled)
 function canCancelOrder(order: Order): boolean {
-    if(order.status === OrderStatus.Pending || order.status === OrderStatus.Processing) return true;
-    else return false;
+    return order.status === OrderStatus.Pending || order.status === OrderStatus.Processing;
 }
 
 
@@ -45,10 +45,10 @@ function getNextStatus(currentStatus: OrderStatus): OrderStatus | null {
 
 // Test your code
 const order: Order = {
-id: 1,
-customerName: "Charlie",
-status: OrderStatus.Pending,
-orderDate: new Date()
+    id: 1,
+    customerName: "Charlie",
+    status: OrderStatus.Pending,
+    orderDate: new Date()
 };
 console.log(getStatusMessage(order.status));
 console.log(canCancelOrder(order));
