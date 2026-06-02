@@ -1,14 +1,12 @@
 // TODO: Create a generic function that returns the first element of an array
 function getFirstElement<T>(values: T[]): T | undefined {
-    if(values.length === 0) return undefined;
-    else return values[0];
+    return values.at(0);
 }
 
 
 // TODO: Create a generic function that returns the last element
 function getLastElement<T>(values: T[]): T | undefined {
-    if(values.length === 0) return undefined;
-    else return values[values.length - 1];
+    return values.at(-1);
 }
 
 
