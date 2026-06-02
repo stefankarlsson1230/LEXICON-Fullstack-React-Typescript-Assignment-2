@@ -52,9 +52,7 @@ type TodoStats = Record<'total' | 'completed' | 'pending', number>;
 function calculateStats(todos: Todo[]): TodoStats {
     let completed = 0;
 
-    for (const todo of todos) {
-        if (todo.completed === true ) completed++;
-    }
+    todos.map((todo) => {if ( todo.completed) completed++; });
     
     return {
         total: todos.length,
@@ -65,16 +63,24 @@ function calculateStats(todos: Todo[]): TodoStats {
 
 
 // TODO: Use Required to make all properties required
-interface OptionalConfig { apiUrl?: string; timeout?: number; retries?: number; }
+interface OptionalConfig { 
+    apiUrl?: string; 
+    timeout?: number; 
+    retries?: number; 
+}
+
 type RequiredConfig = Required<OptionalConfig>;
 
 
 // Test your code
 const todo: Todo = {
-id: 1, title: "Learn TypeScript",
-description: "Complete all exercises",
-completed: false, createdAt: new Date()
+    id: 1, 
+    title: "Learn TypeScript",
+    description: "Complete all exercises",
+    completed: false, 
+    createdAt: new Date()
 };
+
 const updated = updateTodo(todo, { completed: true });
 console.log(updated);
 const preview = getTodoPreview(todo);
